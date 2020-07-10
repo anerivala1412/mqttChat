@@ -108,28 +108,28 @@ aedes-persistence@^5.1.1:
     qlobber "^1.8.0"
     safe-buffer "^5.0.1"
 
-aedes@^0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/aedes/-/aedes-0.30.1.tgz#9af3079fef83fcb368ce643a3f6a540b84195564"
-  integrity sha512-jQDj5gebMpgxLaRlAmKIVS0RqgwrEkLCziYzurFZu74Ivk+6esJ4zKdVvUo9xPaxYeuIr8wZylO+FqauOj+LJg==
+aedes@^0.35.1:
+  version "0.35.1"
+  resolved "https://registry.yarnpkg.com/aedes/-/aedes-0.35.1.tgz#464cc2428ea4539d3095129212dfaa4f123f2972"
+  integrity sha512-gdJYCjjM/J1Fp6xVZWYC6klkcF4XVZJ+qRKbYi1iAfW72c/8MHyIC9Ltk+0PTdBXdWby+bf3msGrRU3qPsfRAw==
   dependencies:
     aedes-packet "^1.0.0"
     aedes-persistence "^5.1.1"
-    bulk-write-stream "^1.0.0"
-    end-of-stream "^1.1.0"
+    bulk-write-stream "^1.1.4"
+    end-of-stream "^1.4.1"
     fastfall "^1.0.0"
     fastparallel "^2.0.0"
     fastseries "^1.5.0"
     from2 "^2.1.0"
     mqemitter "^2.2.0"
-    mqtt-packet "^5.4.0"
-    pump "^1.0.0"
+    mqtt-packet "^5.6.0"
+    pump "^3.0.0"
     retimer "^1.1.0"
-    reusify "^1.0.3"
-    safe-buffer "^5.1.1"
+    reusify "^1.0.4"
+    safe-buffer "^5.1.2"
     shortid "^2.1.3"
     through2 "^2.0.0"
-    uuid "^3.1.0"
+    uuid "^3.2.1"
     xtend "^4.0.1"
 
 after@~0.8.1:
@@ -1348,7 +1348,7 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bulk-write-stream@^1.0.0:
+bulk-write-stream@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/bulk-write-stream/-/bulk-write-stream-1.1.4.tgz#04b4bdaad61f5a813d8323547383020efffa7d7e"
   integrity sha512-GtKwd/4etuk1hNeprXoESBO1RSeRYJMXKf+O0qHmWdUomLT8ysNEfX/4bZFXr3BK6eukpHiEnhY2uMtEHDM2ng==
@@ -4303,7 +4303,7 @@ mqtt-packet@^3.0.0, mqtt-packet@^3.4.7:
     bl "^1.0.0"
     inherits "^2.0.1"
 
-mqtt-packet@^5.4.0, mqtt-packet@^5.6.0:
+mqtt-packet@^5.6.0:
   version "5.6.1"
   resolved "https://registry.yarnpkg.com/mqtt-packet/-/mqtt-packet-5.6.1.tgz#8ecafce091f5af460664268a22b22091c8915f7b"
   integrity sha512-eaF9rO2uFrIYEHomJxziuKTDkbWW5psLBaIGCazQSKqYsTaB3n4SpvJ1PexKaDBiPnMLPIFWBIiTYT3IfEJfww==
@@ -5917,7 +5917,7 @@ retry@~0.6.1:
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.6.1.tgz#fdc90eed943fde11b893554b8cc63d0e899ba918"
   integrity sha1-/ckO7ZQ/3hG4k1VLjMY9DombqRg=
 
-reusify@^1.0.0, reusify@^1.0.3, reusify@^1.0.4:
+reusify@^1.0.0, reusify@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
@@ -6883,7 +6883,7 @@ uuid@^2.0.1:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
   integrity sha1-Z+LoY3lyFVMN/zGOW/nc6/1Hsho=
 
-uuid@^3.1.0, uuid@^3.3.2:
+uuid@^3.2.1, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
