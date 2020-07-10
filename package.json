@@ -9,6 +9,7 @@
     "dev": "nodemon -i public/javascript/index_bundle.js -e js,jsx,css,html -x 'npm run build && npm start'"
   },
   "dependencies": {
+    "@types/mongoose": "^5.7.0",
     "aedes": "^0.30.1",
     "axios": "^0.17.0",
     "body-parser": "^1.18.2",
@@ -16,6 +17,7 @@
     "debug": "^3.1.0",
     "express": "^4.16.2",
     "ioredis": "^3.1.4",
+    "mongoose": "^5.9.22",
     "morgan": "^1.9.0",
     "mosca": "^2.8.3",
     "mqemitter-redis": "^2.2.0",

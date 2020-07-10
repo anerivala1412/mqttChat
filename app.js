@@ -1,6 +1,8 @@
 'use strict';
 
-const express = require('express'),
+const express = require('express');
+const mqtt = require('mqtt');
+var client = mqtt.connect('mqtt://127.0.0.1:1885'),
     path = require('path'),
     favicon = require('serve-favicon'),
     morgan = require('morgan'),
@@ -14,11 +16,21 @@ const express = require('express'),
 const app = express();
 
 redis.on('connect', () => {
-    logger.info('Clearing existing connections data');
     redis.del(redisUtil.USERNAME);
     redis.del(redisUtil.ACTIVE_CHAT);
 });
 
+client.on('connect', function () {
+    client.subscribe('test11');
+    client.publish('test11', 'Hello mqtt');
+  })
+  
+  client.on('message', function (topic, message) {
+    // message is Buffer
+    console.log(topic);
+    console.log(message.toString());
+    client.end();
+  });
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(morgan('dev'));
